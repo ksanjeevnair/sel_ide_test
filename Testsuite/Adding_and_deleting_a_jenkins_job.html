@@ -12,11 +12,6 @@
 <tr><td rowspan="1" colspan="3">1st_testcase</td></tr>
 </thead><tbody>
 <tr>
-	<td>openWindow</td>
-	<td>http://ec2-54-200-13-203.us-west-2.compute.amazonaws.com:8080/</td>
-	<td></td>
-</tr>
-<tr>
 	<td>open</td>
 	<td>/login?from=%2F</td>
 	<td></td>
@@ -37,13 +32,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>5000</td>
+	<td>clickAndWait</td>
+	<td>link=New Item</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=New Item</td>
+	<td>waitForPageToLoad</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//*[@id=&quot;name&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,8 +172,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForPageToLoad</td>
-	<td>10000</td>
+	<td>waitForVisible</td>
+	<td>link=Delete Project</td>
 	<td></td>
 </tr>
 <tr>
